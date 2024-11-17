@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -46,10 +45,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none        &none    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none             &kp BSPC
+&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &none    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_META
+&kp LSHFT         &none  &kp HOME        &none           &kp END          &none        &none    &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &none             &kp ESCAPE
+                                         &kp ESCAPE      &to 1            &kp SPACE    &kp RET  &to 0                 &kp BACKSPACE
             >;
         };
 
@@ -62,10 +61,10 @@
 
             display-name = "Upper";
             bindings = <
-&kp TAB    &kp GRAVE                     &kp AT_SIGN            &kp HASH             &kp DOLLAR             &kp PERCENT       &kp KP_PLUS   &kp KP_NUMBER_7              &kp KP_NUMBER_8             &kp KP_NUMBER_9            &none                    &kp BSPC
-&kp LCTRL  &mt LEFT_CONTROL EXCLAMATION  &mt LEFT_ALT QUESTION  &mt LEFT_META COMMA  &mt LEFT_SHIFT PERIOD  &kp PIPE          &kp KP_EQUAL  &mt RIGHT_SHIFT KP_NUMBER_4  &mt RIGHT_META KP_NUMBER_5  &mt RIGHT_ALT KP_NUMBER_6  &mt RIGHT_CONTROL KP_N0  &none
-&kp LSHFT  &kp CARET                     &kp AMPERSAND          &kp ASTERISK         &kp TILDE              &kp UNDERSCORE    &kp KP_MINUS  &kp KP_NUMBER_1              &kp KP_NUMBER_2             &kp KP_NUMBER_3            &none                    &kp ESCAPE
-                                                                &kp ESCAPE           &to 0                  &kp SPACE         &kp RET       &to 2                        &kp BACKSPACE
+&kp TAB    &kp GRAVE                     &kp AT_SIGN            &kp HASH             &kp DOLLAR             &kp PERCENT       &kp KP_PLUS   &kp NUMBER_7              &kp NUMBER_8             &kp NUMBER_9            &none                       &kp BSPC
+&kp LCTRL  &mt LEFT_CONTROL EXCLAMATION  &mt LEFT_ALT QUESTION  &mt LEFT_META COMMA  &mt LEFT_SHIFT PERIOD  &kp PIPE          &kp KP_EQUAL  &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_META NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
+&kp LSHFT  &kp CARET                     &kp AMPERSAND          &kp ASTERISK         &kp TILDE              &kp UNDERSCORE    &kp KP_MINUS  &kp NUMBER_1              &kp NUMBER_2             &kp NUMBER_3            &none                       &kp ESCAPE
+                                                                &kp ESCAPE           &to 0                  &kp SPACE         &kp RET       &to 2                     &kp BACKSPACE
             >;
         };
     };
