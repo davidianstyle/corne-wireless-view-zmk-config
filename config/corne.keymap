@@ -30,9 +30,9 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q               &kp W           &kp E            &kp R             &kp T        &kp Y    &kp U              &kp I             &kp O            &kp P                   &kp BSPC
-&kp LCTRL  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_META D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RIGHT_META K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LSHFT  &kp Z               &kp X           &kp C            &kp V             &kp B        &kp N    &kp M              &kp COMMA         &kp DOT          &kp FSLH                &kp ESC
+&kp TAB    &kp Q               &kp W           &kp F            &kp P             &kp B        &kp J    &kp L              &kp U             &kp Y            &kp SEMICOLON        &kp BSPC
+&kp LCTRL  &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_META S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_META E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp RIGHT_META
+&kp LSHFT  &kp Z               &kp X           &kp C            &kp D             &kp V        &kp K    &kp H              &kp COMMA         &kp DOT          &kp FSLH             &kp ESC
                                                &kp ESCAPE       &to 1             &kp SPACE    &kp RET  &to 2              &kp BACKSPACE
             >;
         };
@@ -46,10 +46,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none        &none    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none             &kp BSPC
-&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &none    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp SLASH         &kp RIGHT_META
-&kp LSHFT         &none  &kp HOME        &to 3           &kp END          &none        &none    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN  &kp ESCAPE
-                                         &kp ESCAPE      &to 1            &kp SPACE    &kp RET  &to 0                 &kp BACKSPACE
+&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none        &kp GRAVE          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none             &kp BSPC
+&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp SLASH         &kp RIGHT_META
+&kp LSHFT         &none  &kp HOME        &to 3           &kp END          &none        &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN  &kp ESCAPE
+                                         &kp ESCAPE      &to 1            &kp SPACE    &kp RET            &to 0                 &kp BACKSPACE
             >;
         };
 
