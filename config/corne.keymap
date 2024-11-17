@@ -62,10 +62,10 @@
 
             display-name = "Upper";
             bindings = <
-&kp TAB    &kp GRAVE        &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT       &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &kp BSPC
-&kp LCTRL  &kp EXCLAMATION  &kp QUESTION   &kp COMMA     &kp PERIOD  &kp PIPE          &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
-&kp LSHFT  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp TILDE   &kp UNDERSCORE    &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp ESCAPE
-                                           &kp ESCAPE    &to 0       &kp SPACE         &kp RET       &to 2            &kp BACKSPACE
+&kp TAB    &kp GRAVE                     &kp AT_SIGN            &kp HASH             &kp DOLLAR             &kp PERCENT       &kp KP_PLUS   &kp KP_NUMBER_7              &kp KP_NUMBER_8             &kp KP_NUMBER_9            &none                    &kp BSPC
+&kp LCTRL  &mt LEFT_CONTROL EXCLAMATION  &mt LEFT_ALT QUESTION  &mt LEFT_META COMMA  &mt LEFT_SHIFT PERIOD  &kp PIPE          &kp KP_EQUAL  &mt RIGHT_SHIFT KP_NUMBER_4  &mt RIGHT_META KP_NUMBER_5  &mt RIGHT_ALT KP_NUMBER_6  &mt RIGHT_CONTROL KP_N0  &none
+&kp LSHFT  &kp CARET                     &kp AMPERSAND          &kp ASTERISK         &kp TILDE              &kp UNDERSCORE    &kp KP_MINUS  &kp KP_NUMBER_1              &kp KP_NUMBER_2             &kp KP_NUMBER_3            &none                    &kp ESCAPE
+                                                                &kp ESCAPE           &to 0                  &kp SPACE         &kp RET       &to 2                        &kp BACKSPACE
             >;
         };
     };
