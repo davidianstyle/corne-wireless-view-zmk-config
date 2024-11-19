@@ -28,6 +28,15 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -43,7 +52,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q               &kp W           &kp F            &kp P             &kp B        &kp J    &kp L              &kp U             &kp Y            &kp SEMICOLON        &kp BSPC
-&kp LCTRL  &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_META S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_META E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp RIGHT_META
+&kp LCTRL  &ht LEFT_CONTROL A  &ht LEFT_ALT R  &ht LEFT_META S  &ht LEFT_SHIFT T  &kp G        &kp M    &ht RIGHT_SHIFT N  &ht RIGHT_META E  &ht RIGHT_ALT I  &ht RIGHT_CONTROL O  &kp RIGHT_META
 &kp LSHFT  &kp Z               &kp X           &kp C            &kp D             &kp V        &kp K    &kp H              &kp COMMA         &kp DOT          &kp FSLH             &kp ESC
                                                &kp ESCAPE       &ll 0 1           &kp SPACE    &kp RET  &ll 0 2            &kp BACKSPACE
             >;
