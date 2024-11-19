@@ -84,7 +84,7 @@
             display-name = "Upper";
             bindings = <
 &kp TAB    &kp GRAVE                     &kp AT_SIGN            &kp HASH             &kp DOLLAR             &kp PERCENT       &kp KP_PLUS   &kp NUMBER_7              &kp NUMBER_8             &kp NUMBER_9            &none                       &kp BSPC
-&kp LCTRL  &mt LEFT_CONTROL EXCLAMATION  &mt LEFT_ALT QUESTION  &mt LEFT_META COMMA  &mt LEFT_SHIFT PERIOD  &kp PIPE          &kp KP_EQUAL  &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_META NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
+&kp LCTRL  &ht LEFT_CONTROL EXCLAMATION  &ht LEFT_ALT QUESTION  &ht LEFT_META COMMA  &ht LEFT_SHIFT PERIOD  &kp PIPE          &kp KP_EQUAL  &ht RIGHT_SHIFT NUMBER_4  &ht RIGHT_META NUMBER_5  &ht RIGHT_ALT NUMBER_6  &ht RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
 &kp LSHFT  &kp CARET                     &kp AMPERSAND          &kp ASTERISK         &kp TILDE              &kp UNDERSCORE    &kp KP_MINUS  &kp NUMBER_1              &kp NUMBER_2             &kp NUMBER_3            &none                       &kp ESCAPE
                                                                 &kp ESCAPE           &ll 0 1                &kp SPACE         &kp RET       &ll 0 2                   &kp BACKSPACE
             >;
@@ -93,10 +93,10 @@
         bluetooth_layer {
             display-name = "Bluetooth";
             bindings = <
-&kp TAB    &none  &none  &none       &none       &none             &none         &none         &none          &none         &none         &kp BSPC
-&kp LCTRL  &none  &none  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &kp RIGHT_META
-&kp LSHFT  &none  &none  &none       &none       &none             &none         &none         &none          &none         &none         &kp ESC
-                         &kp ESCAPE  &ll 0 1     &kp SPACE         &kp RET       &ll 0 2       &kp BACKSPACE
+&kp TAB    &none  &none       &none       &none       &none             &none         &none         &none          &none         &none         &kp BSPC
+&kp LCTRL  &none  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &kp RIGHT_META
+&kp LSHFT  &none  &none       &none       &none       &none             &none         &none         &none          &none         &none         &kp ESC
+                              &kp ESCAPE  &ll 0 1     &kp SPACE         &kp RET       &ll 0 2       &kp BACKSPACE
             >;
         };
     };
