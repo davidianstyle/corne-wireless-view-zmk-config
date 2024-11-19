@@ -96,7 +96,7 @@
             display-name = "Lower";
             bindings = <
 &kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none        &kp GRAVE          &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                  &none                      &none                      &kp BSPC
-&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &ht_r RIGHT_SHIFT LEFT_PARENTHESIS  &ht_r RIGHT_PARENTHESIS RIGHT_GUI  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp RIGHT_META
+&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &ht_r RIGHT_SHIFT LEFT_PARENTHESIS  &ht_r RIGHT_GUI RIGHT_PARENTHESIS  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp RIGHT_META
 &kp LSHFT         &none  &kp HOME        &to 3           &kp END          &none        &kp DOUBLE_QUOTES  &kp LEFT_BRACE                      &kp RIGHT_BRACE                    &kp LESS_THAN              &kp GREATER_THAN           &kp ESCAPE
                                          &kp ESCAPE      &ll 0 1          &kp SPACE    &kp RET            &ll 0 2                             &kp BACKSPACE
             >;
