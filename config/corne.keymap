@@ -79,10 +79,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q                 &kp W             &kp F              &kp P               &kp B        &kp J    &kp L                &kp U               &kp Y              &kp SEMICOLON          &kp BSPC
-&kp LCTRL  &ht_l LEFT_CONTROL A  &ht_l LEFT_ALT R  &ht_l LEFT_META S  &ht_l LEFT_SHIFT T  &kp G        &kp M    &ht_r RIGHT_SHIFT N  &ht_r RIGHT_META E  &ht_r RIGHT_ALT I  &ht_r RIGHT_CONTROL O  &kp RIGHT_META
-&kp LSHFT  &kp Z                 &kp X             &kp C              &kp D               &kp V        &kp K    &kp H                &kp COMMA           &kp DOT            &kp FSLH               &kp ESC
-                                                   &kp ESCAPE         &ll 0 1             &kp SPACE    &kp RET  &ll 0 2              &kp BACKSPACE
+&kp TAB    &kp Q                 &kp W             &kp F               &kp P              &kp B        &kp J    &kp L               &kp U                &kp Y              &kp SEMICOLON          &kp BSPC
+&kp LCTRL  &ht_l LEFT_CONTROL A  &ht_l LEFT_ALT R  &ht_l LEFT_SHIFT S  &ht_l LEFT_META T  &kp G        &kp M    &ht_r RIGHT_META N  &ht_r RIGHT_SHIFT E  &ht_r RIGHT_ALT I  &ht_r RIGHT_CONTROL O  &kp RIGHT_META
+&kp LSHFT  &kp Z                 &kp X             &kp C               &kp D              &kp V        &kp K    &kp H               &kp COMMA            &kp DOT            &kp FSLH               &kp ESC
+                                                   &kp ESCAPE          &ll 0 1            &kp SPACE    &kp RET  &ll 0 2             &kp BACKSPACE
             >;
         };
 
@@ -95,10 +95,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none        &kp GRAVE          &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                  &none                      &none                      &kp BSPC
-&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &ht_r RIGHT_SHIFT LEFT_PARENTHESIS  &ht_r RIGHT_GUI RIGHT_PARENTHESIS  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp RIGHT_META
-&kp LSHFT         &none  &kp HOME        &to 3           &kp END          &none        &kp DOUBLE_QUOTES  &kp LEFT_BRACE                      &kp RIGHT_BRACE                    &kp LESS_THAN              &kp GREATER_THAN           &kp ESCAPE
-                                         &kp ESCAPE      &ll 0 1          &kp SPACE    &kp RET            &ll 0 2                             &kp BACKSPACE
+&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none        &kp GRAVE          &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                    &none                      &none                      &kp BSPC
+&kp LEFT_CONTROL  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &ht_r RIGHT_META LEFT_PARENTHESIS  &ht_r RIGHT_SHIFT RIGHT_PARENTHESIS  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp RIGHT_META
+&kp LSHFT         &none  &kp HOME        &to 3           &kp END          &none        &kp DOUBLE_QUOTES  &kp LEFT_BRACE                     &kp RIGHT_BRACE                      &kp LESS_THAN              &kp GREATER_THAN           &kp ESCAPE
+                                         &kp ESCAPE      &ll 0 1          &kp SPACE    &kp RET            &ll 0 2                            &kp BACKSPACE
             >;
         };
 
@@ -111,10 +111,10 @@
 
             display-name = "Upper";
             bindings = <
-&kp TAB    &kp GRAVE                       &kp AT_SIGN              &kp HASH               &kp DOLLAR               &kp PERCENT      &kp KP_PLUS   &kp NUMBER_7                &kp NUMBER_8               &kp NUMBER_9              &kp PIPE                      &kp BSPC
-&kp LCTRL  &ht_l LEFT_CONTROL EXCLAMATION  &ht_l LEFT_ALT QUESTION  &ht_l LEFT_META COMMA  &ht_l LEFT_SHIFT PERIOD  &kp COLON        &kp KP_EQUAL  &ht_r RIGHT_SHIFT NUMBER_4  &ht_r RIGHT_META NUMBER_5  &ht_r RIGHT_ALT NUMBER_6  &ht_r RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
-&kp LSHFT  &kp CARET                       &kp AMPERSAND            &kp ASTERISK           &kp TILDE                &kp SEMICOLON    &kp KP_MINUS  &kp NUMBER_1                &kp NUMBER_2               &kp NUMBER_3              &kp UNDERSCORE                &kp ESCAPE
-                                                                    &kp ESCAPE             &ll 0 1                  &kp SPACE        &kp RET       &ll 0 2                     &kp BACKSPACE
+&kp TAB    &kp GRAVE                       &kp AT_SIGN              &kp HASH                &kp DOLLAR              &kp PERCENT      &kp KP_PLUS   &kp NUMBER_7               &kp NUMBER_8                &kp NUMBER_9              &kp PIPE                      &kp BSPC
+&kp LCTRL  &ht_l LEFT_CONTROL EXCLAMATION  &ht_l LEFT_ALT QUESTION  &ht_l LEFT_SHIFT COMMA  &ht_l LEFT_META PERIOD  &kp COLON        &kp KP_EQUAL  &ht_r RIGHT_META NUMBER_4  &ht_r RIGHT_SHIFT NUMBER_5  &ht_r RIGHT_ALT NUMBER_6  &ht_r RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
+&kp LSHFT  &kp CARET                       &kp AMPERSAND            &kp ASTERISK            &kp TILDE               &kp SEMICOLON    &kp KP_MINUS  &kp NUMBER_1               &kp NUMBER_2                &kp NUMBER_3              &kp UNDERSCORE                &kp ESCAPE
+                                                                    &kp ESCAPE              &ll 0 1                 &kp SPACE        &kp RET       &ll 0 2                    &kp BACKSPACE
             >;
         };
 
