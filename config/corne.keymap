@@ -112,8 +112,8 @@
             display-name = "Upper";
             bindings = <
 &kp TAB    &kp GRAVE                       &kp AT_SIGN              &kp HASH                &kp DOLLAR              &kp PERCENT      &kp KP_PLUS   &kp NUMBER_7               &kp NUMBER_8                &kp NUMBER_9              &kp PIPE                      &kp BSPC
-&kp LCTRL  &ht_l LEFT_CONTROL EXCLAMATION  &ht_l LEFT_ALT QUESTION  &ht_l LEFT_SHIFT COMMA  &ht_l LEFT_META PERIOD  &kp COLON        &kp KP_EQUAL  &ht_r RIGHT_META NUMBER_4  &ht_r RIGHT_SHIFT NUMBER_5  &ht_r RIGHT_ALT NUMBER_6  &ht_r RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
-&kp LSHFT  &kp CARET                       &kp AMPERSAND            &kp ASTERISK            &kp TILDE               &kp SEMICOLON    &kp KP_MINUS  &kp NUMBER_1               &kp NUMBER_2                &kp NUMBER_3              &kp UNDERSCORE                &kp ESCAPE
+&kp LCTRL  &ht_l LEFT_CONTROL EXCLAMATION  &ht_l LEFT_ALT QUESTION  &ht_l LEFT_SHIFT COMMA  &ht_l LEFT_META PERIOD  &kp COLON        &kp KP_MINUS  &ht_r RIGHT_META NUMBER_4  &ht_r RIGHT_SHIFT NUMBER_5  &ht_r RIGHT_ALT NUMBER_6  &ht_r RIGHT_CONTROL NUMBER_0  &kp RIGHT_META
+&kp LSHFT  &kp CARET                       &kp AMPERSAND            &kp ASTERISK            &kp TILDE               &kp SEMICOLON    &kp KP_EQUAL  &kp NUMBER_1               &kp NUMBER_2                &kp NUMBER_3              &kp UNDERSCORE                &kp ESCAPE
                                                                     &kp BACKSPACE           &ll 0 1                 &kp SPACE        &kp RET       &ll 0 2                    &kp ESCAPE
             >;
         };
