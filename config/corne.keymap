@@ -123,10 +123,10 @@
         bluetooth_layer {
             display-name = "Bluetooth";
             bindings = <
-&kp TAB    &none  &none       &none          &none       &none             &none         &none         &none         &none         &none         &kp CAPSLOCK
-&kp MINUS  &none  &bt BT_CLR  &bt BT_PRV     &bt BT_NXT  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp SINGLE_QUOTE
-&kp LG(C)  &none  &none       &none          &none       &none             &none         &none         &none         &none         &none         &kp RG(V)
-                              &kp BACKSPACE  &ll 0 1     &kp SPACE         &kp RET       &ll 0 2       &kp ESCAPE
+&kp TAB    &kp F22  &kp F23     &kp F24        &none       &none             &none         &none         &none         &none         &none         &kp CAPSLOCK
+&kp MINUS  &none    &bt BT_CLR  &bt BT_PRV     &bt BT_NXT  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp SINGLE_QUOTE
+&kp LG(C)  &none    &none       &none          &none       &none             &none         &none         &none         &none         &none         &kp RG(V)
+                                &kp BACKSPACE  &ll 0 1     &kp SPACE         &kp RET       &ll 0 2       &kp ESCAPE
             >;
         };
     };
