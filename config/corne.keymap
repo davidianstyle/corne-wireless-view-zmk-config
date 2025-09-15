@@ -1,0 +1,133 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        reset_layer {
+            bindings = <&to 0>;
+            key-positions = <37 40>;
+        };
+    };
+
+    behaviors {
+        ll: ll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LL";
+            bindings = <&to>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <10>;
+        };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        ht_l: ht_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <10>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <19 20 21 22>;
+        };
+
+        ht_r: ht_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <10>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <16 15 14 13>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            display-name = "Base";
+            bindings = <
+&kp TAB    &kp Q                 &kp W             &kp F               &kp P              &kp B        &kp J    &kp L               &kp U                &kp Y              &kp SEMICOLON          &kp CAPSLOCK
+&kp MINUS  &ht_l LEFT_CONTROL A  &ht_l LEFT_ALT R  &ht_l LEFT_SHIFT S  &ht_l LEFT_META T  &kp G        &kp M    &ht_r RIGHT_META N  &ht_r RIGHT_SHIFT E  &ht_r RIGHT_ALT I  &ht_r RIGHT_CONTROL O  &kp SINGLE_QUOTE
+&kp LG(C)  &kp Z                 &kp X             &kp C               &kp D              &kp V        &kp K    &kp H               &kp COMMA            &kp DOT            &kp FSLH               &kp RG(V)
+                                                   &kp BACKSPACE       &ll 0 1            &kp SPACE    &kp RET  &ll 0 2             &kp ESCAPE
+            >;
+        };
+
+        lower_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Lower";
+            bindings = <
+&kp TAB    &none             &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &to 3        &kp GRAVE          &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                    &none                      &none                      &kp CAPSLOCK
+&kp MINUS  &kp LEFT_CONTROL  &kp LEFT_ARROW  &kp LEFT_SHIFT  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &ht_r RIGHT_META LEFT_PARENTHESIS  &ht_r RIGHT_SHIFT RIGHT_PARENTHESIS  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp SINGLE_QUOTE
+&kp LG(C)  &none             &kp HOME        &kp DOWN_ARROW  &kp END          &none        &kp DOUBLE_QUOTES  &kp LEFT_BRACE                     &kp RIGHT_BRACE                      &kp LESS_THAN              &kp GREATER_THAN           &kp RG(V)
+                                             &kp BACKSPACE   &ll 0 1          &kp SPACE    &kp RET            &ll 0 2                            &kp ESCAPE
+            >;
+        };
+
+        upper_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Upper";
+            bindings = <
+&kp TAB    &kp GRAVE                       &kp AT_SIGN              &kp HASH                &kp DOLLAR              &kp PERCENT      &kp KP_PLUS   &kp NUMBER_7               &kp NUMBER_8                &kp NUMBER_9              &kp PIPE                      &kp CAPSLOCK
+&kp MINUS  &ht_l LEFT_CONTROL EXCLAMATION  &ht_l LEFT_ALT QUESTION  &ht_l LEFT_SHIFT COMMA  &ht_l LEFT_META PERIOD  &kp COLON        &kp KP_MINUS  &ht_r RIGHT_META NUMBER_4  &ht_r RIGHT_SHIFT NUMBER_5  &ht_r RIGHT_ALT NUMBER_6  &ht_r RIGHT_CONTROL NUMBER_0  &kp SINGLE_QUOTE
+&kp LG(C)  &kp CARET                       &kp AMPERSAND            &kp ASTERISK            &kp TILDE               &kp SEMICOLON    &kp KP_EQUAL  &kp NUMBER_1               &kp NUMBER_2                &kp NUMBER_3              &kp UNDERSCORE                &kp RG(V)
+                                                                    &kp BACKSPACE           &ll 0 1                 &kp SPACE        &kp RET       &ll 0 2                    &kp ESCAPE
+            >;
+        };
+
+        bluetooth_layer {
+            display-name = "Bluetooth";
+            bindings = <
+&kp TAB    &kp F22  &kp F23     &kp F24        &none       &none             &none         &none         &none         &none         &none         &kp CAPSLOCK
+&kp MINUS  &none    &bt BT_CLR  &bt BT_PRV     &bt BT_NXT  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp SINGLE_QUOTE
+&kp LG(C)  &none    &none       &none          &none       &none             &none         &none         &none         &none         &none         &kp RG(V)
+                                &kp BACKSPACE  &ll 0 1     &kp SPACE         &kp RET       &ll 0 2       &kp ESCAPE
+            >;
+        };
+    };
+};
