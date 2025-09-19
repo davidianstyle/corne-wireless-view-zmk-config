@@ -97,8 +97,8 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB    &none             &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &to 3        &kp GRAVE          &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                    &none                      &none                      &kp CAPSLOCK
-&kp MINUS  &kp LEFT_CONTROL  &kp LEFT_ARROW  &kp LEFT_SHIFT  &kp RIGHT_ARROW  &none        &kp SINGLE_QUOTE   &ht_r RIGHT_META LEFT_PARENTHESIS  &ht_r RIGHT_SHIFT RIGHT_PARENTHESIS  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp SINGLE_QUOTE
+&kp TAB    &none             &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &to 3        &kp GRAVE          &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                    &kp UNDERSCORE             &kp PIPE                   &kp CAPSLOCK
+&kp MINUS  &kp LEFT_CONTROL  &kp LEFT_ARROW  &kp LEFT_SHIFT  &kp RIGHT_ARROW  &to 4        &kp SINGLE_QUOTE   &ht_r RIGHT_META LEFT_PARENTHESIS  &ht_r RIGHT_SHIFT RIGHT_PARENTHESIS  &ht_r RIGHT_ALT BACKSLASH  &ht_r RIGHT_CONTROL SLASH  &kp SINGLE_QUOTE
 &kp LG(C)  &none             &kp HOME        &kp DOWN_ARROW  &kp END          &none        &kp DOUBLE_QUOTES  &kp LEFT_BRACE                     &kp RIGHT_BRACE                      &kp LESS_THAN              &kp GREATER_THAN           &kp RG(V)
                                              &kp BACKSPACE   &ll 0 1          &kp SPACE    &kp RET            &ll 0 2                            &kp ESCAPE
             >;
@@ -127,6 +127,16 @@
 &kp MINUS  &none  &bt BT_CLR  &bt BT_PRV     &bt BT_NXT  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp SINGLE_QUOTE
 &kp LG(C)  &none  &none       &none          &none       &none             &none         &none         &none         &none         &none         &kp RG(V)
                               &kp BACKSPACE  &ll 0 1     &kp SPACE         &kp RET       &ll 0 2       &kp ESCAPE
+            >;
+        };
+
+        prospector_layer {
+            display-name = "Prospector";
+            bindings = <
+&kp TAB    &none  &none  &none          &none    &none        &none    &none    &none       &none  &none  &kp CAPSLOCK
+&kp MINUS  &none  &none  &none          &kp F22  &none        &none    &kp F23  &kp F24     &none  &none  &kp SINGLE_QUOTE
+&kp LG(C)  &none  &none  &none          &none    &none        &none    &none    &none       &none  &none  &kp RG(V)
+                         &kp BACKSPACE  &ll 0 1  &kp SPACE    &kp RET  &ll 0 2  &kp ESCAPE
             >;
         };
     };
