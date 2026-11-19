@@ -58,33 +58,6 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
-
-        // Shift-only HRMs: hold-preferred so fast shift-rolls (S released before I) still shift
-        hs_l: hs_l {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HS_L";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
-            flavor = "hold-preferred";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-        };
-
-        hs_r: hs_r {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HS_R";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
-            flavor = "hold-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-        };
     };
 
     keymap {
@@ -100,7 +73,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q                 &kp W             &kp F               &kp P              &kp B        &kp J    &kp L               &kp U                &kp Y              &kp SEMICOLON          &kp CAPSLOCK
-&kp MINUS  &ht_l LEFT_CONTROL A  &ht_l LEFT_ALT R  &hs_l LEFT_SHIFT S  &ht_l LEFT_META T  &kp G        &kp M    &ht_r RIGHT_META N  &hs_r RIGHT_SHIFT E  &ht_r RIGHT_ALT I  &ht_r RIGHT_CONTROL O  &kp SINGLE_QUOTE
+&kp MINUS  &ht_l LEFT_CONTROL A  &ht_l LEFT_ALT R  &ht_l LEFT_SHIFT S  &ht_l LEFT_META T  &kp G        &kp M    &ht_r RIGHT_META N  &ht_r RIGHT_SHIFT E  &ht_r RIGHT_ALT I  &ht_r RIGHT_CONTROL O  &kp SINGLE_QUOTE
 &kp LG(C)  &kp Z                 &kp X             &kp C               &kp D              &kp V        &kp K    &kp H               &kp COMMA            &kp DOT            &kp FSLH               &kp RG(V)
                                                    &kp BACKSPACE       &ll 0 1            &kp SPACE    &kp RET  &ll 0 2             &kp ESCAPE
             >;
